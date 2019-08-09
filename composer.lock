@@ -151,25 +151,25 @@
         },
         {
             "name": "defuse/php-encryption",
-            "version": "v2.1.0",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/defuse/php-encryption.git",
-                "reference": "5176f5abb38d3ea8a6e3ac6cd3bbb54d8185a689"
+                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/defuse/php-encryption/zipball/5176f5abb38d3ea8a6e3ac6cd3bbb54d8185a689",
-                "reference": "5176f5abb38d3ea8a6e3ac6cd3bbb54d8185a689",
+                "url": "https://api.github.com/repos/defuse/php-encryption/zipball/0f407c43b953d571421e0020ba92082ed5fb7620",
+                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620",
                 "shasum": ""
             },
             "require": {
                 "ext-openssl": "*",
-                "paragonie/random_compat": "~2.0",
+                "paragonie/random_compat": ">= 2",
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "nikic/php-parser": "^2.0|^3.0",
+                "nikic/php-parser": "^2.0|^3.0|^4.0",
                 "phpunit/phpunit": "^4|^5"
             },
             "bin": [
@@ -210,7 +210,7 @@
                 "security",
                 "symmetric key cryptography"
             ],
-            "time": "2017-05-18T21:28:48+00:00"
+            "time": "2018-07-24T23:27:56+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1076,20 +1076,23 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v4.0.0",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35"
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/dccf163dc8ed7ed6a00afc06c51ee5186a428d35",
-                "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": " 4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -1115,7 +1118,7 @@
             ],
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
-            "time": "2016-07-18T04:51:16+00:00"
+            "time": "2017-06-27T22:17:23+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1582,20 +1585,20 @@
         },
         {
             "name": "laravel/passport",
-            "version": "3.0.x-dev",
+            "version": "4.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/passport.git",
-                "reference": "c6a23ff4f05543767b2828b582dd9e74cdb9b014"
+                "reference": "ccbfb6dad50d3af33e8277ddcaac292fd66d9275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/passport/zipball/c6a23ff4f05543767b2828b582dd9e74cdb9b014",
-                "reference": "c6a23ff4f05543767b2828b582dd9e74cdb9b014",
+                "url": "https://api.github.com/repos/laravel/passport/zipball/ccbfb6dad50d3af33e8277ddcaac292fd66d9275",
+                "reference": "ccbfb6dad50d3af33e8277ddcaac292fd66d9275",
                 "shasum": ""
             },
             "require": {
-                "firebase/php-jwt": "~3.0|~4.0",
+                "firebase/php-jwt": "~3.0|~4.0|~5.0",
                 "guzzlehttp/guzzle": "~6.0",
                 "illuminate/auth": "~5.4",
                 "illuminate/console": "~5.4",
@@ -1612,13 +1615,13 @@
                 "zendframework/zend-diactoros": "~1.0"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9",
+                "mockery/mockery": "~1.0",
                 "phpunit/phpunit": "~5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "4.0-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -1647,7 +1650,7 @@
                 "oauth",
                 "passport"
             ],
-            "time": "2017-08-16T13:10:52+00:00"
+            "time": "2018-08-10T19:39:35+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1903,16 +1906,16 @@
         },
         {
             "name": "league/oauth2-server",
-            "version": "6.0.2",
+            "version": "6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth2-server.git",
-                "reference": "925776958fc3f5278e74363663c20147af32b668"
+                "reference": "a0cabb573c7cd5ee01803daec992d6ee3677c4ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth2-server/zipball/925776958fc3f5278e74363663c20147af32b668",
-                "reference": "925776958fc3f5278e74363663c20147af32b668",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-server/zipball/a0cabb573c7cd5ee01803daec992d6ee3677c4ae",
+                "reference": "a0cabb573c7cd5ee01803daec992d6ee3677c4ae",
                 "shasum": ""
             },
             "require": {
@@ -1929,7 +1932,7 @@
                 "lncd/oauth2": "*"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8 || ^5.0",
+                "phpunit/phpunit": "^4.8.38 || ^5.7.21",
                 "zendframework/zend-diactoros": "^1.0"
             },
             "type": "library",
@@ -1967,7 +1970,7 @@
                 "secure",
                 "server"
             ],
-            "time": "2017-08-03T15:09:23+00:00"
+            "time": "2017-12-23T23:33:42+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2252,16 +2255,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.10",
+            "version": "v2.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "634bae8e911eefa89c1abfbf1b66da679ac8f54d"
+                "reference": "0a58ef6e3146256cc3dc7cc393927bcc7d1b72db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/634bae8e911eefa89c1abfbf1b66da679ac8f54d",
-                "reference": "634bae8e911eefa89c1abfbf1b66da679ac8f54d",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/0a58ef6e3146256cc3dc7cc393927bcc7d1b72db",
+                "reference": "0a58ef6e3146256cc3dc7cc393927bcc7d1b72db",
                 "shasum": ""
             },
             "require": {
@@ -2293,10 +2296,11 @@
             "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
             "keywords": [
                 "csprng",
+                "polyfill",
                 "pseudorandom",
                 "random"
             ],
-            "time": "2017-03-13T16:27:32+00:00"
+            "time": "2019-01-03T20:59:08+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -3450,12 +3454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803"
+                "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
-                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/b42a2f66e8f1b15ccf25652c3424265923eb4f17",
+                "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17",
                 "shasum": ""
             },
             "require": {
@@ -3467,7 +3471,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.12-dev"
                 }
             },
             "autoload": {
@@ -3501,7 +3505,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14T15:44:48+00:00"
+            "time": "2019-08-06T08:03:45+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
@@ -3617,36 +3621,40 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "b2098405d8644f6dc4c36febcee6a77c0fdecdff"
+                "reference": "81ae86d3394c994bbff10c6ebcade4fb3fba4e9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/b2098405d8644f6dc4c36febcee6a77c0fdecdff",
-                "reference": "b2098405d8644f6dc4c36febcee6a77c0fdecdff",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/81ae86d3394c994bbff10c6ebcade4fb3fba4e9d",
+                "reference": "81ae86d3394c994bbff10c6ebcade4fb3fba4e9d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "psr/http-message": "~1.0",
-                "symfony/http-foundation": "~2.3|~3.0|~4.0"
+                "php": "^7.1",
+                "psr/http-message": "^1.0",
+                "symfony/http-foundation": "^3.4 || ^4.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "~3.2|4.0"
+                "nyholm/psr7": "^1.1",
+                "symfony/phpunit-bridge": "^3.4.20 || ^4.0",
+                "zendframework/zend-diactoros": "^1.4.1 || ^2.0"
             },
             "suggest": {
-                "psr/http-message-implementation": "To use the HttpFoundation factory",
-                "zendframework/zend-diactoros": "To use the Zend Diactoros factory"
+                "nyholm/psr7": "For a super lightweight PSR-7/17 implementation"
             },
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Bridge\\PsrHttpMessage\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3667,9 +3675,10 @@
             "keywords": [
                 "http",
                 "http-message",
+                "psr-17",
                 "psr-7"
             ],
-            "time": "2017-07-23T09:13:43+00:00"
+            "time": "2019-04-03T17:12:25+00:00"
         },
         {
             "name": "symfony/routing",
@@ -4044,16 +4053,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "dev-develop",
+            "version": "dev-release-1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "5f0c491736afbe07a4599eb778fbb6d9729a10d6"
+                "reference": "e03f49042677da6a9c7a6699cf7e6025ec234603"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/5f0c491736afbe07a4599eb778fbb6d9729a10d6",
-                "reference": "5f0c491736afbe07a4599eb778fbb6d9729a10d6",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/e03f49042677da6a9c7a6699cf7e6025ec234603",
+                "reference": "e03f49042677da6a9c7a6699cf7e6025ec234603",
                 "shasum": ""
             },
             "require": {
@@ -4066,17 +4075,27 @@
             "require-dev": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
-                "phpunit/phpunit": "^5.7.16 || ^6.0.8",
+                "php-http/psr7-integration-tests": "dev-master",
+                "phpunit/phpunit": "^5.7.16 || ^6.0.8 || ^7.2.7",
                 "zendframework/zend-coding-standard": "~1.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev",
-                    "dev-develop": "1.6-dev"
+                    "dev-release-1.8": "1.8.x-dev"
                 }
             },
             "autoload": {
+                "files": [
+                    "src/functions/create_uploaded_file.php",
+                    "src/functions/marshal_headers_from_sapi.php",
+                    "src/functions/marshal_method_from_sapi.php",
+                    "src/functions/marshal_protocol_version_from_sapi.php",
+                    "src/functions/marshal_uri_from_sapi.php",
+                    "src/functions/normalize_server.php",
+                    "src/functions/normalize_uploaded_files.php",
+                    "src/functions/parse_cookie_header.php"
+                ],
                 "psr-4": {
                     "Zend\\Diactoros\\": "src/"
                 }
@@ -4092,7 +4111,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2017-08-22T20:40:13+00:00"
+            "time": "2019-08-06T17:55:50+00:00"
         }
     ],
     "packages-dev": [
@@ -5723,7 +5742,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "symfony/yaml": 20
+        "laravel/passport": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
