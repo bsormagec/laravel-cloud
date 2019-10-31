@@ -17,7 +17,7 @@
         "predis/predis": "^1.1",
         "pusher/pusher-php-server": "^3.0",
         "ramsey/uuid": "^3.7",
-        "spatie/once": "^1.0",
+        "spatie/once": "^2.0",
         "symfony/yaml": "^4.4"
     },
     "require-dev": {
