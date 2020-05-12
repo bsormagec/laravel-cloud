@@ -7,7 +7,7 @@
     "require": {
         "php": ">=7.0.0",
         "aws/aws-sdk-php": "^3.28",
-        "barryvdh/laravel-cors": "^0.9.2",
+        "barryvdh/laravel-cors": "^1.0.x-dev",
         "doctrine/dbal": "^2.5",
         "guzzlehttp/guzzle": "^6.2",
         "hashids/hashids": "^2.0",
